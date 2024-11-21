@@ -1,0 +1,850 @@
+info:
+  contact: {}
+paths:
+  /blog/addBlog:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: blog名称
+        in: formData
+        name: name
+        type: string
+      - description: blog标签
+        in: formData
+        name: label
+        type: string
+      - description: blog描述
+        in: formData
+        name: describe
+        type: string
+      - description: blog描述1
+        in: formData
+        name: describe1
+        type: string
+      - description: blog图片1
+        in: formData
+        name: image1
+        type: file
+      - description: blog描述2
+        in: formData
+        name: describe2
+        type: string
+      - description: blog图片2
+        in: formData
+        name: image2
+        type: file
+      - description: blog描述3
+        in: formData
+        name: describe3
+        type: string
+      - description: blog图片3
+        in: formData
+        name: image3
+        type: file
+      - description: blog描述4
+        in: formData
+        name: describe4
+        type: string
+      - description: blog图片4
+        in: formData
+        name: image4
+        type: file
+      - description: blog描述5
+        in: formData
+        name: describe5
+        type: string
+      - description: blog图片5
+        in: formData
+        name: image5
+        type: file
+      - description: blog描述6
+        in: formData
+        name: describe6
+        type: string
+      - description: blog图片6
+        in: formData
+        name: image6
+        type: file
+      - description: blog描述7
+        in: formData
+        name: describe7
+        type: string
+      - description: blog图片7
+        in: formData
+        name: image7
+        type: file
+      - description: blog描述8
+        in: formData
+        name: describe8
+        type: string
+      - description: blog图片8
+        in: formData
+        name: image8
+        type: file
+      - description: blog描述9
+        in: formData
+        name: describe9
+        type: string
+      - description: blog图片9
+        in: formData
+        name: image9
+        type: file
+      - description: blog描述10
+        in: formData
+        name: describe10
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 添加新的blog
+      tags:
+      - blog模块
+  /blog/deleteBlog:
+    post:
+      parameters:
+      - description: blogID
+        in: query
+        name: id
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 删除blog
+      tags:
+      - blog模块
+  /blog/getBlogList:
+    get:
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 获取所有blog信息
+      tags:
+      - blog模块
+  /blog/getTheBlog:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: blogID
+        in: formData
+        name: id
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 获取指定的blog
+      tags:
+      - blog模块
+  /blog/updateBlog:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: blogID
+        in: formData
+        name: id
+        type: string
+      - description: blog名称
+        in: formData
+        name: name
+        type: string
+      - description: blog标签
+        in: formData
+        name: label
+        type: string
+      - description: blog描述
+        in: formData
+        name: describe
+        type: string
+      - description: blog描述1
+        in: formData
+        name: describe1
+        type: string
+      - description: blog图片1
+        in: formData
+        name: image1
+        type: file
+      - description: blog描述2
+        in: formData
+        name: describe2
+        type: string
+      - description: blog图片2
+        in: formData
+        name: image2
+        type: file
+      - description: blog描述3
+        in: formData
+        name: describe3
+        type: string
+      - description: blog图片3
+        in: formData
+        name: image3
+        type: file
+      - description: blog描述4
+        in: formData
+        name: describe4
+        type: string
+      - description: blog图片4
+        in: formData
+        name: image4
+        type: file
+      - description: blog描述5
+        in: formData
+        name: describe5
+        type: string
+      - description: blog图片5
+        in: formData
+        name: image5
+        type: file
+      - description: blog描述6
+        in: formData
+        name: describe6
+        type: string
+      - description: blog图片6
+        in: formData
+        name: image6
+        type: file
+      - description: blog描述7
+        in: formData
+        name: describe7
+        type: string
+      - description: blog图片7
+        in: formData
+        name: image7
+        type: file
+      - description: blog描述8
+        in: formData
+        name: describe8
+        type: string
+      - description: blog图片8
+        in: formData
+        name: image8
+        type: file
+      - description: blog描述9
+        in: formData
+        name: describe9
+        type: string
+      - description: blog图片9
+        in: formData
+        name: image9
+        type: file
+      - description: blog描述10
+        in: formData
+        name: describe10
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 修改指定的blog
+      tags:
+      - blog模块
+  /experience/addExperience:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 经验名字
+        in: formData
+        name: name
+        type: string
+      - description: 经验网址
+        in: formData
+        name: url
+        type: string
+      - description: 经验描述
+        in: formData
+        name: description
+        type: string
+      - description: 经验时间
+        in: formData
+        name: time
+        type: string
+      - description: 经验图片
+        in: formData
+        name: image
+        type: file
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 添加新的经验
+      tags:
+      - 经验模块
+  /experience/getExperienceList:
+    get:
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 获取所有经验信息
+      tags:
+      - 经验模块
+  /friend/findFriend:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 您的名字
+        in: formData
+        name: name
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 查询朋友信息
+      tags:
+      - 朋友模块
+  /index:
+    get:
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      tags:
+      - swag测试
+  /information/addInformation:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 信息名字
+        in: formData
+        name: name
+        type: string
+      - description: 信息昵称
+        in: formData
+        name: nickname
+        type: string
+      - description: 信息位置
+        in: formData
+        name: location
+        type: string
+      - description: 信息街道
+        in: formData
+        name: street
+        type: string
+      - description: 信息描述
+        in: formData
+        name: description
+        type: string
+      - description: 网站描述
+        in: formData
+        name: webDescription
+        type: string
+      - description: 项目描述
+        in: formData
+        name: projectDescription
+        type: string
+      - description: 照片描述
+        in: formData
+        name: photoDescription
+        type: string
+      - description: 博客描述
+        in: formData
+        name: blogDescription
+        type: string
+      - description: 建议描述
+        in: formData
+        name: suggestionDescription
+        type: string
+      - description: 信息图片
+        in: formData
+        name: image
+        type: file
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 添加新的信息
+      tags:
+      - 信息模块
+  /information/getInformation:
+    get:
+      consumes:
+      - multipart/form-data
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 获取信息
+      tags:
+      - 信息模块
+  /message/addMessage:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 名字
+        in: formData
+        name: name
+        type: string
+      - description: 留言内容
+        in: formData
+        name: text
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 添加新的留言
+      tags:
+      - 留言模块
+  /message/getMessageList:
+    get:
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 获取所有留言信息
+      tags:
+      - 留言模块
+  /photo/addPhoto:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 照片名称
+        in: formData
+        name: name
+        type: string
+      - description: 照片
+        in: formData
+        name: image
+        type: file
+      - description: 照片描述
+        in: formData
+        name: description
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 添加新的照片
+      tags:
+      - 照片模块
+  /photo/deletePhoto:
+    post:
+      parameters:
+      - description: 照片ID
+        in: query
+        name: id
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 删除照片
+      tags:
+      - 照片模块
+  /photo/getPhotoList:
+    get:
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 获取所有照片信息
+      tags:
+      - 照片模块
+  /photo/updatePhoto:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 照片ID
+        in: formData
+        name: id
+        type: string
+      - description: 照片名称
+        in: formData
+        name: name
+        type: string
+      - description: 照片
+        in: formData
+        name: image
+        type: file
+      - description: 照片描述
+        in: formData
+        name: description
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 修改指定的照片
+      tags:
+      - 照片模块
+  /project/addProject:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 项目名称
+        in: formData
+        name: name
+        type: string
+      - description: 项目 URL
+        in: formData
+        name: url
+        type: string
+      - description: 项目描述
+        in: formData
+        name: describe
+        type: string
+      - description: 项目描述1
+        in: formData
+        name: describe1
+        type: string
+      - description: 项目图片1
+        in: formData
+        name: image1
+        type: file
+      - description: 项目描述2
+        in: formData
+        name: describe2
+        type: string
+      - description: 项目图片2
+        in: formData
+        name: image2
+        type: file
+      - description: 项目描述3
+        in: formData
+        name: describe3
+        type: string
+      - description: 项目图片3
+        in: formData
+        name: image3
+        type: file
+      - description: 项目描述4
+        in: formData
+        name: describe4
+        type: string
+      - description: 项目图片4
+        in: formData
+        name: image4
+        type: file
+      - description: 项目描述5
+        in: formData
+        name: describe5
+        type: string
+      - description: 项目图片5
+        in: formData
+        name: image5
+        type: file
+      - description: 项目描述6
+        in: formData
+        name: describe6
+        type: string
+      - description: 项目图片6
+        in: formData
+        name: image6
+        type: file
+      - description: 项目描述7
+        in: formData
+        name: describe7
+        type: string
+      - description: 项目图片7
+        in: formData
+        name: image7
+        type: file
+      - description: 项目描述8
+        in: formData
+        name: describe8
+        type: string
+      - description: 项目图片8
+        in: formData
+        name: image8
+        type: file
+      - description: 项目描述9
+        in: formData
+        name: describe9
+        type: string
+      - description: 项目图片9
+        in: formData
+        name: image9
+        type: file
+      - description: 项目描述10
+        in: formData
+        name: describe10
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 添加新的项目
+      tags:
+      - 项目模块
+  /project/deleteProject:
+    post:
+      parameters:
+      - description: 项目ID
+        in: query
+        name: id
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 删除项目
+      tags:
+      - 项目模块
+  /project/getProjectList:
+    get:
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 获取所有项目信息
+      tags:
+      - 项目模块
+  /project/getTheProject:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 项目ID
+        in: formData
+        name: id
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 获取指定的项目
+      tags:
+      - 项目模块
+  /project/updateProject:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 项目ID
+        in: formData
+        name: id
+        type: string
+      - description: 项目名称
+        in: formData
+        name: name
+        type: string
+      - description: 项目 URL
+        in: formData
+        name: url
+        type: string
+      - description: 项目描述
+        in: formData
+        name: describe
+        type: string
+      - description: 项目描述1
+        in: formData
+        name: describe1
+        type: string
+      - description: 项目图片1
+        in: formData
+        name: image1
+        type: file
+      - description: 项目描述2
+        in: formData
+        name: describe2
+        type: string
+      - description: 项目图片2
+        in: formData
+        name: image2
+        type: file
+      - description: 项目描述3
+        in: formData
+        name: describe3
+        type: string
+      - description: 项目图片3
+        in: formData
+        name: image3
+        type: file
+      - description: 项目描述4
+        in: formData
+        name: describe4
+        type: string
+      - description: 项目图片4
+        in: formData
+        name: image4
+        type: file
+      - description: 项目描述5
+        in: formData
+        name: describe5
+        type: string
+      - description: 项目图片5
+        in: formData
+        name: image5
+        type: file
+      - description: 项目描述6
+        in: formData
+        name: describe6
+        type: string
+      - description: 项目图片6
+        in: formData
+        name: image6
+        type: file
+      - description: 项目描述7
+        in: formData
+        name: describe7
+        type: string
+      - description: 项目图片7
+        in: formData
+        name: image7
+        type: file
+      - description: 项目描述8
+        in: formData
+        name: describe8
+        type: string
+      - description: 项目图片8
+        in: formData
+        name: image8
+        type: file
+      - description: 项目描述9
+        in: formData
+        name: describe9
+        type: string
+      - description: 项目图片9
+        in: formData
+        name: image9
+        type: file
+      - description: 项目描述10
+        in: formData
+        name: describe10
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 修改指定的项目
+      tags:
+      - 项目模块
+  /skill/addSkill:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 技能名字
+        in: formData
+        name: name
+        type: string
+      - description: 技能网址
+        in: formData
+        name: url
+        type: string
+      - description: 技能描述
+        in: formData
+        name: description
+        type: string
+      - description: 技能时间
+        in: formData
+        name: time
+        type: string
+      - description: 技能图片
+        in: formData
+        name: image
+        type: file
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 添加新的技能
+      tags:
+      - 技能模块
+  /skill/getSkillList:
+    get:
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 获取所有技能信息
+      tags:
+      - 技能模块
+  /visitor/check:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 请输入Token
+        in: formData
+        name: token
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 查询访问者角色
+      tags:
+      - 访问者模块
+  /visitor/findVisitor:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 请输入用户名
+        in: formData
+        name: username
+        type: string
+      - description: 请输入密码
+        in: formData
+        name: password
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 查询访问者信息
+      tags:
+      - 访问者模块
+  /visitor/registerVisitor:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: 请输入用户名
+        in: formData
+        name: username
+        type: string
+      - description: 请输入密码
+        in: formData
+        name: password
+        type: string
+      responses:
+        "200":
+          description: code","message"}
+          schema:
+            type: string
+      summary: 注册
+      tags:
+      - 访问者模块
+swagger: "2.0"
